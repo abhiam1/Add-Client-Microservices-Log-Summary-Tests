@@ -116,8 +116,12 @@ Add-Client-Microservices-Log-Summary-Tests/Microservices_Log_Summary_Test/src/ma
           For the test purpose I have considered the “Response Exit time” as - 34,002 , as correctly mentioned in the log trace no2 -
 
           2015-10-28T12:24:34,002 TRACE [OperImpl] entry with (addClient:97900) 
-
-
+          
+                                            **************************************    
+          
+                         For any queries and feedback, please get in touch on email with the Test Developer 
+                                            at - abhiam1@gmail.com or skype - abhiam11 
+                                         Thanks . Abhijit Malankar , MSc Engg TU Berlin . 
 
                                             **************************************
    
