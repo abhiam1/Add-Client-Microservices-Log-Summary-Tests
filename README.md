@@ -19,7 +19,8 @@ Add-Client-Microservices-Log-Summary-Tests/Microservices_Log_Summary_Test/src/ma
 3) v1.0 release is available in releases field at path below - which contains both zip and tar.gz Source of the repository
     https://github.com/abhiam1/Add-Client-Microservices-Log-Summary-Tests/releases 
     
-4) The main Requirements QA case study document is available for quick reference 
+4) The main Requirements QA case study document is available for quick reference within the repository as  -   
+    ( Requirements_microservice_logs_case_study.pdf )
 
 5) Java class Test file ( Log_Summary_Extract_tests.java ) has been written using various functions and methods like - Try/catch ,    
     Buffered reader , while / if loop , String Search , String Tokenizer class , for loop , String Parsing  etc
@@ -58,6 +59,47 @@ Add-Client-Microservices-Log-Summary-Tests/Microservices_Log_Summary_Test/src/ma
        *** Results Analysis inference from the console output for Test Results Requirements expected in the case study ***
 
 
+      1. Name of service = Test Result .No 1 - From the log file we are able to find the Name of service is = (addClient & Unique 
+                           Request id number is = 97900)
+      
+      2. Number of requests made to the service = Test Result .No 2  - Number of requests made to the service are = 2
+      
+      3. Maximum time of request execution = Test Result .No 7 - Maximum time required for Add Client request execution 
+                                             ( in seconds ) is = 0.0099
+       
+       
+      
+      *** Known Issues / Errors observed in the Requirements Case study Document and Test assumptions made to mitigate these errors ***
+      
+     
+     Couple of errors were observed in the Requirements Case study Document which are noted below along with mitigation assumptions made 
+     for tests - ( Please refer the repository document -  ( Requirements_microservice_logs_case_study.pdf ) )
 
+     
+      A) on page 1 - under the “Data File” heading the second log entry says “entry with”
+
+         2015-10-28T12:24:34,002 TRACE [OperImpl] entry with (addClient:97900) ,
+
+         should it have been saying “exit with” instead ? Since the Add clinet service is getting a response here.
+
+       Assumption made for Tests : 
+
+       For this test purpose I have considered the second log as “exit with” so the exit time stamp can be accordingly considered .
+
+ 
+     B) Again on page 1 - under the “Data File/ where ” heading - the listed “Response Exit time”  mentioned is - 33,903 which is 
+        incorrect , as below
+
+        2015-10-28T12:24:33,903 - response exit time 
+
+        Since the log itself mentions it as - 34,002 
+
+        2015-10-28T12:24:34,002 TRACE [OperImpl] entry with (addClient:97900) 
+
+        Assumption made for Tests : 
+
+         For the test purpose I have considered the “Response Exit time” as - 34,002 , as correctly mentioned in the log trace no2 -
+
+          2015-10-28T12:24:34,002 TRACE [OperImpl] entry with (addClient:97900) 
 
    
